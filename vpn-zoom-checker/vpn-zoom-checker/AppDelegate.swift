@@ -43,7 +43,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
     }
 
    func constructReporters(){
-        zoomStatusReporter = AppStatusReporter(withAppIdentifier: "us.zoom.xos")
+        zoomStatusReporter = AppStatusReporter(withAppIdentifier: "us.zoom.CptHost")
                 vpnStatusReporter = NetworkStatusReporter(withNetworkInterface: "gpd0", networkInterfaceStatus: "UP")
     }
 
