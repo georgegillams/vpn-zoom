@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D20F4B52243655E500DE9F10 /* StatusItemAlerter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F4B51243655E500DE9F10 /* StatusItemAlerter.swift */; };
 		D2822E332433D82400151417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2822E322433D82400151417 /* AppDelegate.swift */; };
 		D2822E352433D82400151417 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2822E342433D82400151417 /* ContentView.swift */; };
 		D2822E372433D82800151417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2822E362433D82800151417 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D20F4B51243655E500DE9F10 /* StatusItemAlerter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusItemAlerter.swift; sourceTree = "<group>"; };
 		D2822E2F2433D82400151417 /* vpn-zoom-checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vpn-zoom-checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2822E322433D82400151417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2822E342433D82400151417 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		D2822E312433D82400151417 /* vpn-zoom-checker */ = {
 			isa = PBXGroup;
 			children = (
+				D20F4B51243655E500DE9F10 /* StatusItemAlerter.swift */,
 				D2822E672433DDD200151417 /* NetworkStatusReporter.swift */,
 				D2822E652433DD6900151417 /* StatusReporter.swift */,
 				D2822E632433DD5200151417 /* AppStatusReporter.swift */,
@@ -249,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D20F4B52243655E500DE9F10 /* StatusItemAlerter.swift in Sources */,
 				D2822E352433D82400151417 /* ContentView.swift in Sources */,
 				D2822E642433DD5200151417 /* AppStatusReporter.swift in Sources */,
 				D2822E682433DDD200151417 /* NetworkStatusReporter.swift in Sources */,

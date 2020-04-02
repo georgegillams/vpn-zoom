@@ -20,13 +20,19 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
     var checkStatusTimer: Timer?
     let notificationIdentifier = "ZOOM_VPN_NOTIFICATION"
     var minNextNotificationDate: Date = Date(timeIntervalSince1970: TimeInterval(0.0))
+    var statusItemAlerter: StatusItemAlerter?
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         self.requestNotificationPermissions()
         self.constructStatusBarButton()
         self.constructReporters()
+        self.constructStatusItemAlerter()
 
         self.checkStatusTimer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(checkStatus), userInfo: nil, repeats: true)
+    }
+
+    func constructStatusItemAlerter() {
+        self.statusItemAlerter = StatusItemAlerter(withStatusItem: self.statusItem!)
     }
 
     func requestNotificationPermissions () {
@@ -58,6 +64,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
     func constructMenu() {
         self.menu = NSMenu()
 
+        self.menu?.addItem(NSMenuItem(title: "About Zoom VPN checker", action: #selector(NSApplication.orderFrontStandardAboutPanel(_:)), keyEquivalent: "") )
         if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
             self.menu?.addItem(NSMenuItem(title: "Version \(version)", action: nil, keyEquivalent: "") )
         }
@@ -73,24 +80,34 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
     @objc func checkStatus()
     {
         DispatchQueue.global(qos: .background).async {
-            let timeNow = NSDate()
-            if timeNow.compare(self.minNextNotificationDate) == ComparisonResult.orderedDescending {
-                let onZoomCall = self.zoomStatusReporter?.conditionSatisfied() ?? false
+            let onZoomCall = self.zoomStatusReporter?.conditionSatisfied() ?? false
+
+            if(onZoomCall) {
                 let onVPN = self.vpnStatusReporter?.conditionSatisfied() ?? false
 
-                if(onZoomCall && onVPN){
+                if(onVPN){
+                    print("Using VPN and Zoom")
+                    self.statusItemAlerter!.start()
+
                     DispatchQueue.main.async {
-                        print("WARN USER NOW")
-                        self.sendNotification()
-                        // Don't notify for another 30 mins
-                        self.minNextNotificationDate = timeNow.addingTimeInterval(1800) as Date
+                        let timeNow = NSDate()
+                        if timeNow.compare(self.minNextNotificationDate) == ComparisonResult.orderedDescending {
+                            print("Notifying user")
+                            self.sendNotification(withTime: timeNow)
+                            // Don't notify for another 30 mins
+                            self.minNextNotificationDate = timeNow.addingTimeInterval(1800) as Date
+                        }
                     }
+                } else {
+                    self.statusItemAlerter!.stop()
                 }
+            } else {
+                self.statusItemAlerter!.stop()
             }
         }
     }
 
-    func sendNotification() {
+    func sendNotification(withTime time: NSDate) {
       // Create Notification content
       let notificationContent = UNMutableNotificationContent()
 
@@ -101,7 +118,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
       // Create Notification trigger
       let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
 
-      let request = UNNotificationRequest(identifier: notificationIdentifier, content: notificationContent, trigger: trigger)
+        let request = UNNotificationRequest(identifier: "\(notificationIdentifier)_\(time.timeIntervalSince1970)", content: notificationContent, trigger: trigger)
 
       UNUserNotificationCenter.current().add(request, withCompletionHandler: { error in
         if error != nil {
