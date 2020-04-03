@@ -15,8 +15,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
 
     var statusItem: NSStatusItem?
     var menu: NSMenu?
-    var zoomStatusReporter: AppStatusReporter?
-    var vpnStatusReporter: NetworkStatusReporter?
+    var zoomStatusReporter: StatusReporter?
+    var vpnStatusReporter: StatusReporter?
     var checkStatusTimer: Timer?
     let notificationIdentifier = "ZOOM_VPN_NOTIFICATION"
     var minNextNotificationDate: Date = Date(timeIntervalSince1970: TimeInterval(0.0))

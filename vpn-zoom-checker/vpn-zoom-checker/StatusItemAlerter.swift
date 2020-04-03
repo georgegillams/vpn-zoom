@@ -10,7 +10,7 @@ import Cocoa
 
 class StatusItemAlerter: NSObject {
 
-    var statusItem: NSStatusItem?
+    let statusItem: NSStatusItem?
     var alerterTimer: Timer?
     var statusItemImage = "StatusBarButtonImage"
 

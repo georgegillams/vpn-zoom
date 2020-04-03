@@ -11,15 +11,15 @@ import NetworkExtension
 
 class NetworkStatusReporter: StatusReporter {
 
-    var networkInterface: String = ""
-    var networkInterfaceStatus: String = ""
+    let networkInterface: String!
+    let networkInterfaceStatus: String!
 
     init(withNetworkInterface networkInterface: String, networkInterfaceStatus: String) {
         self.networkInterface = networkInterface
         self.networkInterfaceStatus = networkInterfaceStatus
     }
 
-    override func conditionSatisfied() -> Bool {
+    func conditionSatisfied() -> Bool {
         let task = Process()
         task.launchPath = "/sbin/ifconfig"
         task.arguments = [self.networkInterface]

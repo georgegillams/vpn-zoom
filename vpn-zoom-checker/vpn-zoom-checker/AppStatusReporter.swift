@@ -10,13 +10,13 @@ import Cocoa
 
 class AppStatusReporter: StatusReporter {
 
-    var appIdentifier: String = ""
+    let appIdentifier: String!
 
     init(withAppIdentifier appIdentifier: String) {
         self.appIdentifier = appIdentifier
     }
 
-    override func conditionSatisfied() -> Bool {
+    func conditionSatisfied() -> Bool {
         let workspace = NSWorkspace.shared
         let applications = workspace.runningApplications
         for app in applications {

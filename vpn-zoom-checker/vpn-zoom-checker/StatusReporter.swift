@@ -8,11 +8,9 @@
 
 import Cocoa
 
-class StatusReporter: NSObject {
+protocol StatusReporter {
 
-    func conditionSatisfied() -> Bool {
-        return false
-    }
+    func conditionSatisfied() -> Bool
 
 }
 
