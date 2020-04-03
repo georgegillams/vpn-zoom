@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D20F4B52243655E500DE9F10 /* StatusItemAlerter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F4B51243655E500DE9F10 /* StatusItemAlerter.swift */; };
-		D2822E332433D82400151417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2822E322433D82400151417 /* AppDelegate.swift */; };
-		D2822E352433D82400151417 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2822E342433D82400151417 /* ContentView.swift */; };
-		D2822E372433D82800151417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2822E362433D82800151417 /* Assets.xcassets */; };
-		D2822E3A2433D82800151417 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2822E392433D82800151417 /* Preview Assets.xcassets */; };
-		D2822E3D2433D82800151417 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2822E3B2433D82800151417 /* Main.storyboard */; };
-		D2822E642433DD5200151417 /* AppStatusReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2822E632433DD5200151417 /* AppStatusReporter.swift */; };
-		D2822E662433DD6900151417 /* StatusReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2822E652433DD6900151417 /* StatusReporter.swift */; };
-		D2822E682433DDD200151417 /* NetworkStatusReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2822E672433DDD200151417 /* NetworkStatusReporter.swift */; };
+		D2D578F1243791F800734F56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D578F0243791F800734F56 /* AppDelegate.swift */; };
+		D2D578F3243791F800734F56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D578F2243791F800734F56 /* ContentView.swift */; };
+		D2D578F5243791FB00734F56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D578F4243791FB00734F56 /* Assets.xcassets */; };
+		D2D578F8243791FB00734F56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2D578F7243791FB00734F56 /* Preview Assets.xcassets */; };
+		D2D578FB243791FB00734F56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D578F9243791FB00734F56 /* Main.storyboard */; };
+		D2EFFBB42437924B001E7B09 /* AppStatusReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFFBB02437924B001E7B09 /* AppStatusReporter.swift */; };
+		D2EFFBB52437924B001E7B09 /* StatusItemAlerter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFFBB12437924B001E7B09 /* StatusItemAlerter.swift */; };
+		D2EFFBB62437924B001E7B09 /* StatusReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFFBB22437924B001E7B09 /* StatusReporter.swift */; };
+		D2EFFBB72437924B001E7B09 /* NetworkStatusReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EFFBB32437924B001E7B09 /* NetworkStatusReporter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,23 +33,40 @@
 			remoteGlobalIDString = D2822E2E2433D82400151417;
 			remoteInfo = "vpn-zoom-checker";
 		};
+		D2D57903243791FB00734F56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2822E272433D82400151417 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2D578ED243791F800734F56;
+			remoteInfo = "VPN Zoom Checker";
+		};
+		D2D5790E243791FB00734F56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2822E272433D82400151417 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2D578ED243791F800734F56;
+			remoteInfo = "VPN Zoom Checker";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D20F4B51243655E500DE9F10 /* StatusItemAlerter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusItemAlerter.swift; sourceTree = "<group>"; };
 		D2822E2F2433D82400151417 /* vpn-zoom-checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vpn-zoom-checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2822E322433D82400151417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2822E342433D82400151417 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D2822E362433D82800151417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D2822E392433D82800151417 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D2822E3C2433D82800151417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D2822E3E2433D82800151417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2822E3F2433D82800151417 /* vpn_zoom_checker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = vpn_zoom_checker.entitlements; sourceTree = "<group>"; };
 		D2822E442433D82900151417 /* vpn-zoom-checkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vpn-zoom-checkerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2822E4F2433D82900151417 /* vpn-zoom-checkerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "vpn-zoom-checkerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2822E632433DD5200151417 /* AppStatusReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStatusReporter.swift; sourceTree = "<group>"; };
-		D2822E652433DD6900151417 /* StatusReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusReporter.swift; sourceTree = "<group>"; };
-		D2822E672433DDD200151417 /* NetworkStatusReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStatusReporter.swift; sourceTree = "<group>"; };
+		D2D578EE243791F800734F56 /* VPN Zoom Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VPN Zoom Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D578F0243791F800734F56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2D578F2243791F800734F56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D2D578F4243791FB00734F56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2D578F7243791FB00734F56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D2D578FA243791FB00734F56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2D578FC243791FB00734F56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2D578FD243791FB00734F56 /* VPN_Zoom_Checker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VPN_Zoom_Checker.entitlements; sourceTree = "<group>"; };
+		D2D57902243791FB00734F56 /* VPN Zoom CheckerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VPN Zoom CheckerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D5790D243791FB00734F56 /* VPN Zoom CheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VPN Zoom CheckerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2EFFBB02437924B001E7B09 /* AppStatusReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStatusReporter.swift; sourceTree = "<group>"; };
+		D2EFFBB12437924B001E7B09 /* StatusItemAlerter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusItemAlerter.swift; sourceTree = "<group>"; };
+		D2EFFBB22437924B001E7B09 /* StatusReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusReporter.swift; sourceTree = "<group>"; };
+		D2EFFBB32437924B001E7B09 /* NetworkStatusReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStatusReporter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,13 +91,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2D578EB243791F800734F56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D578FF243791FB00734F56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D5790A243791FB00734F56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		D2822E262433D82400151417 = {
 			isa = PBXGroup;
 			children = (
-				D2822E312433D82400151417 /* vpn-zoom-checker */,
+				D2D578EF243791F800734F56 /* VPN Zoom Checker */,
 				D2822E302433D82400151417 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,32 +129,35 @@
 				D2822E2F2433D82400151417 /* vpn-zoom-checker.app */,
 				D2822E442433D82900151417 /* vpn-zoom-checkerTests.xctest */,
 				D2822E4F2433D82900151417 /* vpn-zoom-checkerUITests.xctest */,
+				D2D578EE243791F800734F56 /* VPN Zoom Checker.app */,
+				D2D57902243791FB00734F56 /* VPN Zoom CheckerTests.xctest */,
+				D2D5790D243791FB00734F56 /* VPN Zoom CheckerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D2822E312433D82400151417 /* vpn-zoom-checker */ = {
+		D2D578EF243791F800734F56 /* VPN Zoom Checker */ = {
 			isa = PBXGroup;
 			children = (
-				D20F4B51243655E500DE9F10 /* StatusItemAlerter.swift */,
-				D2822E672433DDD200151417 /* NetworkStatusReporter.swift */,
-				D2822E652433DD6900151417 /* StatusReporter.swift */,
-				D2822E632433DD5200151417 /* AppStatusReporter.swift */,
-				D2822E322433D82400151417 /* AppDelegate.swift */,
-				D2822E342433D82400151417 /* ContentView.swift */,
-				D2822E362433D82800151417 /* Assets.xcassets */,
-				D2822E3B2433D82800151417 /* Main.storyboard */,
-				D2822E3E2433D82800151417 /* Info.plist */,
-				D2822E3F2433D82800151417 /* vpn_zoom_checker.entitlements */,
-				D2822E382433D82800151417 /* Preview Content */,
+				D2EFFBB02437924B001E7B09 /* AppStatusReporter.swift */,
+				D2EFFBB32437924B001E7B09 /* NetworkStatusReporter.swift */,
+				D2EFFBB12437924B001E7B09 /* StatusItemAlerter.swift */,
+				D2EFFBB22437924B001E7B09 /* StatusReporter.swift */,
+				D2D578F0243791F800734F56 /* AppDelegate.swift */,
+				D2D578F2243791F800734F56 /* ContentView.swift */,
+				D2D578F4243791FB00734F56 /* Assets.xcassets */,
+				D2D578F9243791FB00734F56 /* Main.storyboard */,
+				D2D578FC243791FB00734F56 /* Info.plist */,
+				D2D578FD243791FB00734F56 /* VPN_Zoom_Checker.entitlements */,
+				D2D578F6243791FB00734F56 /* Preview Content */,
 			);
-			path = "vpn-zoom-checker";
+			path = "VPN Zoom Checker";
 			sourceTree = "<group>";
 		};
-		D2822E382433D82800151417 /* Preview Content */ = {
+		D2D578F6243791FB00734F56 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				D2822E392433D82800151417 /* Preview Assets.xcassets */,
+				D2D578F7243791FB00734F56 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -177,6 +218,59 @@
 			productReference = D2822E4F2433D82900151417 /* vpn-zoom-checkerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		D2D578ED243791F800734F56 /* VPN Zoom Checker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2D5791A243791FB00734F56 /* Build configuration list for PBXNativeTarget "VPN Zoom Checker" */;
+			buildPhases = (
+				D2D578EA243791F800734F56 /* Sources */,
+				D2D578EB243791F800734F56 /* Frameworks */,
+				D2D578EC243791F800734F56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VPN Zoom Checker";
+			productName = "VPN Zoom Checker";
+			productReference = D2D578EE243791F800734F56 /* VPN Zoom Checker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2D57901243791FB00734F56 /* VPN Zoom CheckerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2D5791B243791FB00734F56 /* Build configuration list for PBXNativeTarget "VPN Zoom CheckerTests" */;
+			buildPhases = (
+				D2D578FE243791FB00734F56 /* Sources */,
+				D2D578FF243791FB00734F56 /* Frameworks */,
+				D2D57900243791FB00734F56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2D57904243791FB00734F56 /* PBXTargetDependency */,
+			);
+			name = "VPN Zoom CheckerTests";
+			productName = "VPN Zoom CheckerTests";
+			productReference = D2D57902243791FB00734F56 /* VPN Zoom CheckerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2D5790C243791FB00734F56 /* VPN Zoom CheckerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2D5791C243791FB00734F56 /* Build configuration list for PBXNativeTarget "VPN Zoom CheckerUITests" */;
+			buildPhases = (
+				D2D57909243791FB00734F56 /* Sources */,
+				D2D5790A243791FB00734F56 /* Frameworks */,
+				D2D5790B243791FB00734F56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2D5790F243791FB00734F56 /* PBXTargetDependency */,
+			);
+			name = "VPN Zoom CheckerUITests";
+			productName = "VPN Zoom CheckerUITests";
+			productReference = D2D5790D243791FB00734F56 /* VPN Zoom CheckerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,6 +292,17 @@
 						CreatedOnToolsVersion = 11.3;
 						TestTargetID = D2822E2E2433D82400151417;
 					};
+					D2D578ED243791F800734F56 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					D2D57901243791FB00734F56 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = D2D578ED243791F800734F56;
+					};
+					D2D5790C243791FB00734F56 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = D2D578ED243791F800734F56;
+					};
 				};
 			};
 			buildConfigurationList = D2822E2A2433D82400151417 /* Build configuration list for PBXProject "vpn-zoom-checker" */;
@@ -216,6 +321,9 @@
 				D2822E2E2433D82400151417 /* vpn-zoom-checker */,
 				D2822E432433D82900151417 /* vpn-zoom-checkerTests */,
 				D2822E4E2433D82900151417 /* vpn-zoom-checkerUITests */,
+				D2D578ED243791F800734F56 /* VPN Zoom Checker */,
+				D2D57901243791FB00734F56 /* VPN Zoom CheckerTests */,
+				D2D5790C243791FB00734F56 /* VPN Zoom CheckerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,9 +333,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2822E3D2433D82800151417 /* Main.storyboard in Resources */,
-				D2822E3A2433D82800151417 /* Preview Assets.xcassets in Resources */,
-				D2822E372433D82800151417 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +350,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2D578EC243791F800734F56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2D578FB243791FB00734F56 /* Main.storyboard in Resources */,
+				D2D578F8243791FB00734F56 /* Preview Assets.xcassets in Resources */,
+				D2D578F5243791FB00734F56 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D57900243791FB00734F56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D5790B243791FB00734F56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -252,12 +381,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D20F4B52243655E500DE9F10 /* StatusItemAlerter.swift in Sources */,
-				D2822E352433D82400151417 /* ContentView.swift in Sources */,
-				D2822E642433DD5200151417 /* AppStatusReporter.swift in Sources */,
-				D2822E682433DDD200151417 /* NetworkStatusReporter.swift in Sources */,
-				D2822E662433DD6900151417 /* StatusReporter.swift in Sources */,
-				D2822E332433D82400151417 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +392,33 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D2822E4B2433D82900151417 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D578EA243791F800734F56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2EFFBB52437924B001E7B09 /* StatusItemAlerter.swift in Sources */,
+				D2EFFBB72437924B001E7B09 /* NetworkStatusReporter.swift in Sources */,
+				D2D578F3243791F800734F56 /* ContentView.swift in Sources */,
+				D2EFFBB62437924B001E7B09 /* StatusReporter.swift in Sources */,
+				D2EFFBB42437924B001E7B09 /* AppStatusReporter.swift in Sources */,
+				D2D578F1243791F800734F56 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D578FE243791FB00734F56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2D57909243791FB00734F56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,13 +438,23 @@
 			target = D2822E2E2433D82400151417 /* vpn-zoom-checker */;
 			targetProxy = D2822E502433D82900151417 /* PBXContainerItemProxy */;
 		};
+		D2D57904243791FB00734F56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2D578ED243791F800734F56 /* VPN Zoom Checker */;
+			targetProxy = D2D57903243791FB00734F56 /* PBXContainerItemProxy */;
+		};
+		D2D5790F243791FB00734F56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2D578ED243791F800734F56 /* VPN Zoom Checker */;
+			targetProxy = D2D5790E243791FB00734F56 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D2822E3B2433D82800151417 /* Main.storyboard */ = {
+		D2D578F9243791FB00734F56 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D2822E3C2433D82800151417 /* Base */,
+				D2D578FA243791FB00734F56 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -460,7 +620,6 @@
 		D2822E5C2433D82900151417 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -481,7 +640,6 @@
 		D2822E5D2433D82900151417 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -502,7 +660,6 @@
 		D2822E5F2433D82900151417 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "vpn-zoom-checkerUITests/Info.plist";
@@ -521,7 +678,6 @@
 		D2822E602433D82900151417 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "vpn-zoom-checkerUITests/Info.plist";
@@ -534,6 +690,128 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "vpn-zoom-checker";
+			};
+			name = Release;
+		};
+		D2D57914243791FB00734F56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "VPN Zoom Checker/VPN_Zoom_Checker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"VPN Zoom Checker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "VPN Zoom Checker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skyscanner.VPN-Zoom-Checker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D2D57915243791FB00734F56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "VPN Zoom Checker/VPN_Zoom_Checker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"VPN Zoom Checker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "VPN Zoom Checker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skyscanner.VPN-Zoom-Checker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D2D57916243791FB00734F56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "VPN Zoom CheckerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skyscanner.VPN-Zoom-CheckerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VPN Zoom Checker.app/Contents/MacOS/VPN Zoom Checker";
+			};
+			name = Debug;
+		};
+		D2D57917243791FB00734F56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "VPN Zoom CheckerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skyscanner.VPN-Zoom-CheckerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VPN Zoom Checker.app/Contents/MacOS/VPN Zoom Checker";
+			};
+			name = Release;
+		};
+		D2D57918243791FB00734F56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "VPN Zoom CheckerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skyscanner.VPN-Zoom-CheckerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "VPN Zoom Checker";
+			};
+			name = Debug;
+		};
+		D2D57919243791FB00734F56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "VPN Zoom CheckerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.skyscanner.VPN-Zoom-CheckerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "VPN Zoom Checker";
 			};
 			name = Release;
 		};
@@ -572,6 +850,33 @@
 			buildConfigurations = (
 				D2822E5F2433D82900151417 /* Debug */,
 				D2822E602433D82900151417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2D5791A243791FB00734F56 /* Build configuration list for PBXNativeTarget "VPN Zoom Checker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D57914243791FB00734F56 /* Debug */,
+				D2D57915243791FB00734F56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2D5791B243791FB00734F56 /* Build configuration list for PBXNativeTarget "VPN Zoom CheckerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D57916243791FB00734F56 /* Debug */,
+				D2D57917243791FB00734F56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2D5791C243791FB00734F56 /* Build configuration list for PBXNativeTarget "VPN Zoom CheckerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D57918243791FB00734F56 /* Debug */,
+				D2D57919243791FB00734F56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
