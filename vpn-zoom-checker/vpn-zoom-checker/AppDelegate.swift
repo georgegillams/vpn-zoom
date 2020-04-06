@@ -36,7 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
     }
 
     func requestNotificationPermissions () {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.sound, .alert, .badge]) {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.sound, .alert]) {
           granted, error in
           if granted {
             print("Approval granted to send notifications")
