@@ -37,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		D20F4B51243655E500DE9F10 /* StatusItemAlerter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusItemAlerter.swift; sourceTree = "<group>"; };
-		D2822E2F2433D82400151417 /* vpn-zoom-checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vpn-zoom-checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2822E2F2433D82400151417 /* VPN Zoom Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VPN Zoom Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2822E322433D82400151417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2822E342433D82400151417 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D2822E362433D82800151417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		D2822E302433D82400151417 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2822E2F2433D82400151417 /* vpn-zoom-checker.app */,
+				D2822E2F2433D82400151417 /* VPN Zoom Checker.app */,
 				D2822E442433D82900151417 /* vpn-zoom-checkerTests.xctest */,
 				D2822E4F2433D82900151417 /* vpn-zoom-checkerUITests.xctest */,
 			);
@@ -138,7 +138,7 @@
 			);
 			name = "vpn-zoom-checker";
 			productName = "vpn-zoom-checker";
-			productReference = D2822E2F2433D82400151417 /* vpn-zoom-checker.app */;
+			productReference = D2822E2F2433D82400151417 /* VPN Zoom Checker.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D2822E432433D82900151417 /* vpn-zoom-checkerTests */ = {
@@ -431,7 +431,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.skyscanner.vpn-zoom-checker";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "VPN Zoom Checker";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -452,7 +452,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.skyscanner.vpn-zoom-checker";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "VPN Zoom Checker";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
