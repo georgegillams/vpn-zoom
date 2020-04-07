@@ -420,9 +420,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "vpn-zoom-checker/vpn_zoom_checker.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.5.3;
 				DEVELOPMENT_ASSET_PATHS = "\"vpn-zoom-checker/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "vpn-zoom-checker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -430,7 +434,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.skyscanner.vpn-zoom-checker";
+				MARKETING_VERSION = 1.5.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-zoom-checker";
 				PRODUCT_NAME = "VPN Zoom Checker";
 				SWIFT_VERSION = 5.0;
 			};
@@ -441,9 +446,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "vpn-zoom-checker/vpn_zoom_checker.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.5.3;
 				DEVELOPMENT_ASSET_PATHS = "\"vpn-zoom-checker/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "vpn-zoom-checker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -451,7 +460,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.skyscanner.vpn-zoom-checker";
+				MARKETING_VERSION = 1.5.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-zoom-checker";
 				PRODUCT_NAME = "VPN Zoom Checker";
 				SWIFT_VERSION = 5.0;
 			};
@@ -471,7 +481,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.skyscanner.vpn-zoom-checkerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-zoom-checkerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vpn-zoom-checker.app/Contents/MacOS/vpn-zoom-checker";
@@ -492,7 +502,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.skyscanner.vpn-zoom-checkerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-zoom-checkerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vpn-zoom-checker.app/Contents/MacOS/vpn-zoom-checker";
@@ -511,7 +521,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.skyscanner.vpn-zoom-checkerUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-zoom-checkerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "vpn-zoom-checker";
@@ -530,7 +540,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.skyscanner.vpn-zoom-checkerUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-zoom-checkerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "vpn-zoom-checker";
