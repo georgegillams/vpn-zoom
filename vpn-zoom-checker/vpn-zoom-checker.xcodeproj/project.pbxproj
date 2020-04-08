@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D20F4B52243655E500DE9F10 /* StatusItemAlerter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F4B51243655E500DE9F10 /* StatusItemAlerter.swift */; };
+		D219ACB7243E0A0500D83E47 /* OrStatusReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219ACB6243E0A0500D83E47 /* OrStatusReporter.swift */; };
 		D2822E332433D82400151417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2822E322433D82400151417 /* AppDelegate.swift */; };
 		D2822E352433D82400151417 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2822E342433D82400151417 /* ContentView.swift */; };
 		D2822E372433D82800151417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2822E362433D82800151417 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		D20F4B51243655E500DE9F10 /* StatusItemAlerter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusItemAlerter.swift; sourceTree = "<group>"; };
+		D219ACB6243E0A0500D83E47 /* OrStatusReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrStatusReporter.swift; sourceTree = "<group>"; };
 		D2822E2F2433D82400151417 /* VPN Zoom Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VPN Zoom Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2822E322433D82400151417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2822E342433D82400151417 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		D2822E312433D82400151417 /* vpn-zoom-checker */ = {
 			isa = PBXGroup;
 			children = (
+				D219ACB6243E0A0500D83E47 /* OrStatusReporter.swift */,
 				D20F4B51243655E500DE9F10 /* StatusItemAlerter.swift */,
 				D2822E672433DDD200151417 /* NetworkStatusReporter.swift */,
 				D2822E652433DD6900151417 /* StatusReporter.swift */,
@@ -258,6 +261,7 @@
 				D2822E682433DDD200151417 /* NetworkStatusReporter.swift in Sources */,
 				D2822E662433DD6900151417 /* StatusReporter.swift in Sources */,
 				D2822E332433D82400151417 /* AppDelegate.swift in Sources */,
+				D219ACB7243E0A0500D83E47 /* OrStatusReporter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,9 +427,9 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.5.3;
+				CURRENT_PROJECT_VERSION = 1.5.4;
 				DEVELOPMENT_ASSET_PATHS = "\"vpn-zoom-checker/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 28PF4W85NQ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "vpn-zoom-checker/Info.plist";
@@ -434,7 +438,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.5.3;
+				MARKETING_VERSION = 1.5.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-zoom-checker";
 				PRODUCT_NAME = "VPN Zoom Checker";
 				SWIFT_VERSION = 5.0;
@@ -449,9 +453,9 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.5.3;
+				CURRENT_PROJECT_VERSION = 1.5.4;
 				DEVELOPMENT_ASSET_PATHS = "\"vpn-zoom-checker/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 28PF4W85NQ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "vpn-zoom-checker/Info.plist";
@@ -460,7 +464,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.5.3;
+				MARKETING_VERSION = 1.5.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-zoom-checker";
 				PRODUCT_NAME = "VPN Zoom Checker";
 				SWIFT_VERSION = 5.0;

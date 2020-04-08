@@ -15,8 +15,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
 
     var statusItem: NSStatusItem?
     var menu: NSMenu?
-    var zoomStatusReporter: StatusReporter?
-    var vpnStatusReporter: StatusReporter?
+    var zoomStatusReporter: OrStatusReporter?
+    var vpnStatusReporter: OrStatusReporter?
     var checkStatusTimer: Timer?
     let notificationIdentifier = "ZOOM_VPN_NOTIFICATION"
     var minNextNotificationDate: Date = Date(timeIntervalSince1970: TimeInterval(0.0))
@@ -37,26 +37,29 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
 
     func requestNotificationPermissions () {
         UNUserNotificationCenter.current().requestAuthorization(options: [.sound, .alert]) {
-          granted, error in
-          if granted {
-            print("Approval granted to send notifications")
-          } else {
-            print(error)
-          }
+            granted, error in
+            if granted {
+                print("Approval granted to send notifications")
+            } else {
+                print(error)
+            }
         }
 
         UNUserNotificationCenter.current().delegate = self
     }
 
-   func constructReporters(){
-        zoomStatusReporter = AppStatusReporter(withAppIdentifier: "us.zoom.CptHost")
-                vpnStatusReporter = NetworkStatusReporter(withNetworkInterface: "gpd0", networkInterfaceStatus: "UP")
+    func constructReporters(){
+        zoomStatusReporter = OrStatusReporter()
+        zoomStatusReporter?.add(statusReporter: AppStatusReporter(withAppIdentifier: "us.zoom.CptHost"))
+
+        vpnStatusReporter = OrStatusReporter()
+        vpnStatusReporter?.add(statusReporter: NetworkStatusReporter(withNetworkInterface: "gpd0", networkInterfaceStatus: "UP"))
     }
 
     func constructStatusBarButton() {
         self.statusItem = NSStatusBar.system.statusItem(withLength:NSStatusItem.squareLength)
         if let button = self.statusItem?.button {
-          button.image = NSImage(named:NSImage.Name("StatusBarButtonImage"))
+            button.image = NSImage(named:NSImage.Name("StatusBarButtonImage"))
         }
         self.constructMenu()
     }
@@ -108,29 +111,29 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
     }
 
     func sendNotification(withTime time: NSDate) {
-      // Create Notification content
-      let notificationContent = UNMutableNotificationContent()
+        // Create Notification content
+        let notificationContent = UNMutableNotificationContent()
 
-      notificationContent.title = "Zoom over VPN warning"
-      notificationContent.body = "If possible, please disconnect from the VPN 🌎 while you use Zoom 📹. Thanks 🙇‍♂️"
-      notificationContent.sound = UNNotificationSound.default
+        notificationContent.title = "Zoom over VPN warning"
+        notificationContent.body = "If possible, please disconnect from the VPN 🌎 while you use Zoom 📹. Thanks 🙇‍♂️"
+        notificationContent.sound = UNNotificationSound.default
 
-      // Create Notification trigger
-      let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+        // Create Notification trigger
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
 
         let request = UNNotificationRequest(identifier: "\(notificationIdentifier)_\(time.timeIntervalSince1970)", content: notificationContent, trigger: trigger)
 
-      UNUserNotificationCenter.current().add(request, withCompletionHandler: { error in
-        if error != nil {
-          print("\(error)")
-        } else {
-        }
-      })
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: { error in
+            if error != nil {
+                print("\(error)")
+            } else {
+            }
+        })
     }
 
     // pragma - UserNotificationDelegate
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-      completionHandler(.alert)
+        completionHandler(.alert)
     }
 
 }
