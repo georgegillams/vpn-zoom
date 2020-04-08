@@ -13,14 +13,16 @@ import UserNotifications
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDelegate {
 
-    var statusItem: NSStatusItem?
-    var menu: NSMenu?
-    var zoomStatusReporter: OrStatusReporter?
-    var vpnStatusReporter: OrStatusReporter?
-    var checkStatusTimer: Timer?
+    var statusItem: NSStatusItem!
+    var startOnBootMenuItem: NSMenuItem!
+    var menu: NSMenu!
+    var zoomStatusReporter: OrStatusReporter!
+    var vpnStatusReporter: OrStatusReporter!
+    var launchAgentHelper: LaunchAgentHelper!
+    var checkStatusTimer: Timer!
     let notificationIdentifier = "ZOOM_VPN_NOTIFICATION"
     var minNextNotificationDate: Date = Date(timeIntervalSince1970: TimeInterval(0.0))
-    var statusItemAlerter: StatusItemAlerter?
+    var statusItemAlerter: StatusItemAlerter!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         self.requestNotificationPermissions()
@@ -66,18 +68,28 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
 
     func constructMenu() {
         self.menu = NSMenu()
+        self.startOnBootMenuItem = NSMenuItem(title: "Start on system boot", action: #selector(self.toggleStartOnBoot), keyEquivalent: "")
 
         self.menu?.addItem(NSMenuItem(title: "About Zoom VPN checker", action: #selector(NSApplication.orderFrontStandardAboutPanel(_:)), keyEquivalent: "") )
         if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
             self.menu?.addItem(NSMenuItem(title: "Version \(version)", action: nil, keyEquivalent: "") )
         }
-        self.menu?.addItem(NSMenuItem(title: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
+        self.menu?.addItem(self.startOnBootMenuItem)
+        self.menu?.addItem(NSMenuItem(title: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: ""))
 
         self.statusItem?.menu = menu
+
+        self.launchAgentHelper = LaunchAgentHelper(menuItem: self.startOnBootMenuItem)
+        self.launchAgentHelper.updateMenuImage()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         checkStatusTimer?.invalidate()
+    }
+
+    @objc func toggleStartOnBoot()
+    {
+        self.launchAgentHelper.toggleStartOnBoot()
     }
 
     @objc func checkStatus()
@@ -116,7 +128,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
 
         notificationContent.title = "Zoom over VPN warning"
         notificationContent.body = "If possible, please disconnect from the VPN 🌎 while you use Zoom 📹\n" +
-        "Thanks 🙇‍♂️\n" +
+            "Thanks 🙇‍♂️\n" +
         "I won't notify you again for 30 mins ⏱"
         notificationContent.sound = UNNotificationSound.default
 
