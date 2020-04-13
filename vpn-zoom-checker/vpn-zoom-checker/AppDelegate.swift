@@ -43,7 +43,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
             if granted {
                 print("Approval granted to send notifications")
             } else {
-                print(error)
+                print(error ?? "")
             }
         }
 
@@ -56,6 +56,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
 
         vpnStatusReporter = OrStatusReporter()
         vpnStatusReporter?.add(statusReporter: NetworkStatusReporter(withNetworkInterface: "gpd0", networkInterfaceStatus: "UP"))
+        vpnStatusReporter?.add(statusReporter: NetworkStatusReporter(withNetworkInterface: "utun6", networkInterfaceStatus: "UP"))
     }
 
     func constructStatusBarButton() {
