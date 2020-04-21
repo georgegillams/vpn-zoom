@@ -127,8 +127,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
         // Create Notification content
         let notificationContent = UNMutableNotificationContent()
 
-        notificationContent.title = "Zoom over VPN warning"
-        notificationContent.body = "If possible, please disconnect from the VPN 🌎 while you use Zoom 📹\n" +
+        notificationContent.title = "Video over VPN warning"
+        notificationContent.body = "If possible, please disconnect from the VPN 🌎 while you're on a video call 📹\n" +
             "Thanks 🙇‍♂️\n" +
         "I won't notify you again for 30 mins ⏱"
         notificationContent.sound = UNNotificationSound.default
