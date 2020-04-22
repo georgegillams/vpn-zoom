@@ -56,7 +56,7 @@
 /* Begin PBXFileReference section */
 		D20F4B51243655E500DE9F10 /* StatusItemAlerter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusItemAlerter.swift; sourceTree = "<group>"; };
 		D219ACB6243E0A0500D83E47 /* OrStatusReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrStatusReporter.swift; sourceTree = "<group>"; };
-		D2822E2F2433D82400151417 /* VPN Zoom Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VPN Zoom Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2822E2F2433D82400151417 /* VPN Video Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VPN Video Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2822E322433D82400151417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2822E342433D82400151417 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D2822E362433D82800151417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		D2822E302433D82400151417 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2822E2F2433D82400151417 /* VPN Zoom Checker.app */,
+				D2822E2F2433D82400151417 /* VPN Video Checker.app */,
 				D2822E442433D82900151417 /* vpn-zoom-checkerTests.xctest */,
 				D2822E4F2433D82900151417 /* vpn-zoom-checkerUITests.xctest */,
 			);
@@ -173,7 +173,7 @@
 			);
 			name = "vpn-zoom-checker";
 			productName = "vpn-zoom-checker";
-			productReference = D2822E2F2433D82400151417 /* VPN Zoom Checker.app */;
+			productReference = D2822E2F2433D82400151417 /* VPN Video Checker.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D2822E432433D82900151417 /* vpn-zoom-checkerTests */ = {
@@ -480,9 +480,9 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.8.0;
+				CURRENT_PROJECT_VERSION = 2.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"vpn-zoom-checker/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 28PF4W85NQ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -495,9 +495,9 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-zoom-checker";
-				PRODUCT_NAME = "VPN Zoom Checker";
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-video-checker";
+				PRODUCT_NAME = "VPN Video Checker";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -510,9 +510,9 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.8.0;
+				CURRENT_PROJECT_VERSION = 2.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"vpn-zoom-checker/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 28PF4W85NQ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -525,9 +525,9 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 1.8.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-zoom-checker";
-				PRODUCT_NAME = "VPN Zoom Checker";
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-video-checker";
+				PRODUCT_NAME = "VPN Video Checker";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -546,7 +546,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-zoom-checkerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-video-checkerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vpn-zoom-checker.app/Contents/MacOS/vpn-zoom-checker";
@@ -567,7 +567,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-zoom-checkerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-video-checkerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vpn-zoom-checker.app/Contents/MacOS/vpn-zoom-checker";
@@ -586,7 +586,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-zoom-checkerUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-video-checkerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "vpn-zoom-checker";
@@ -605,7 +605,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-zoom-checkerUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-video-checkerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "vpn-zoom-checker";

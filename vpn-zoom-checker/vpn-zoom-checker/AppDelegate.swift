@@ -71,7 +71,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
         self.menu = NSMenu()
         self.startOnBootMenuItem = NSMenuItem(title: "Start on system boot", action: #selector(self.toggleStartOnBoot), keyEquivalent: "")
 
-        self.menu?.addItem(NSMenuItem(title: "About Zoom VPN checker", action: #selector(NSApplication.orderFrontStandardAboutPanel(_:)), keyEquivalent: "") )
+        self.menu?.addItem(NSMenuItem(title: "About VPN Video Checker", action: #selector(NSApplication.orderFrontStandardAboutPanel(_:)), keyEquivalent: "") )
         if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
             self.menu?.addItem(NSMenuItem(title: "Version \(version)", action: nil, keyEquivalent: "") )
         }
@@ -102,7 +102,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
                 let onVPN = self.vpnStatusReporter?.conditionSatisfied() ?? false
 
                 if(onVPN){
-                    print("Using VPN and Zoom")
+                    print("Using VPN and Video")
                     self.statusItemAlerter!.start()
 
                     DispatchQueue.main.async {
@@ -140,7 +140,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
 
         UNUserNotificationCenter.current().add(request, withCompletionHandler: { error in
             if error != nil {
-                print("\(error)")
+                print("\(String(describing: error))")
             } else {
             }
         })

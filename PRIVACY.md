@@ -1,3 +1,3 @@
-# Privacy Policy - VPN Zoom Checker
+# Privacy Policy - VPN Video Checker
 
-The VPN Zoom Checker does not collect any information from your device.
+The VPN Video Checker does not collect any information from your device.
