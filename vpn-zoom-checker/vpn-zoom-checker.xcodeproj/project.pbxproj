@@ -10,7 +10,6 @@
 		D20F4B52243655E500DE9F10 /* StatusItemAlerter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20F4B51243655E500DE9F10 /* StatusItemAlerter.swift */; };
 		D219ACB7243E0A0500D83E47 /* OrStatusReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219ACB6243E0A0500D83E47 /* OrStatusReporter.swift */; };
 		D2822E332433D82400151417 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2822E322433D82400151417 /* AppDelegate.swift */; };
-		D2822E352433D82400151417 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2822E342433D82400151417 /* ContentView.swift */; };
 		D2822E372433D82800151417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2822E362433D82800151417 /* Assets.xcassets */; };
 		D2822E3A2433D82800151417 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2822E392433D82800151417 /* Preview Assets.xcassets */; };
 		D2822E3D2433D82800151417 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2822E3B2433D82800151417 /* Main.storyboard */; };
@@ -58,7 +57,6 @@
 		D219ACB6243E0A0500D83E47 /* OrStatusReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrStatusReporter.swift; sourceTree = "<group>"; };
 		D2822E2F2433D82400151417 /* VPN Video Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VPN Video Checker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2822E322433D82400151417 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2822E342433D82400151417 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D2822E362433D82800151417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2822E392433D82800151417 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D2822E3C2433D82800151417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 				D2822E652433DD6900151417 /* StatusReporter.swift */,
 				D2822E632433DD5200151417 /* AppStatusReporter.swift */,
 				D2822E322433D82400151417 /* AppDelegate.swift */,
-				D2822E342433D82400151417 /* ContentView.swift */,
 				D2822E362433D82800151417 /* Assets.xcassets */,
 				D2822E3B2433D82800151417 /* Main.storyboard */,
 				D2822E3E2433D82800151417 /* Info.plist */,
@@ -308,7 +305,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D20F4B52243655E500DE9F10 /* StatusItemAlerter.swift in Sources */,
-				D2822E352433D82400151417 /* ContentView.swift in Sources */,
 				D2822E642433DD5200151417 /* AppStatusReporter.swift in Sources */,
 				D2822E682433DDD200151417 /* NetworkStatusReporter.swift in Sources */,
 				D28DCC49243E4626004B4DC1 /* LaunchAgentHelper.swift in Sources */,
@@ -480,7 +476,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2.0.0;
+				CURRENT_PROJECT_VERSION = 2.0.1;
 				DEVELOPMENT_ASSET_PATHS = "\"vpn-zoom-checker/Preview Content\"";
 				DEVELOPMENT_TEAM = 28PF4W85NQ;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -494,8 +490,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 2.0.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-video-checker";
 				PRODUCT_NAME = "VPN Video Checker";
 				SWIFT_VERSION = 5.0;
@@ -510,7 +506,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2.0.0;
+				CURRENT_PROJECT_VERSION = 2.0.1;
 				DEVELOPMENT_ASSET_PATHS = "\"vpn-zoom-checker/Preview Content\"";
 				DEVELOPMENT_TEAM = 28PF4W85NQ;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -524,8 +520,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				MARKETING_VERSION = 2.0.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "uk.co.georgegillams.vpn-video-checker";
 				PRODUCT_NAME = "VPN Video Checker";
 				SWIFT_VERSION = 5.0;
